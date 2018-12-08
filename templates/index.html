@@ -5,4 +5,24 @@
     <h1>Welcome to MTAssistant</h1>
     <p class="lead">This application helps you decide wheter to take the express or local train to get to yourr destination faster</p>
   </div>
+
+  <h1>Learn about the dogs of New York!</h1>
+  <h3>Select a Borough and find the most popular dog names or breeds</h3>
+  <form method="POST" action="/send">
+    <div class="form-group">
+      <select name="borough">
+        <option value="Queens">Queens</option>
+        <option value="Bronx">Bronx</option>
+        <option value="Brooklynn">Brooklynn</option>
+        <option value="Manhattan">Manhattan</option>
+        <option value="StatenIsland">Staten Island</option>
+      </select>
+      <select name="val">
+        <option value="Name">Name</option>
+        <option value="Breed">Breed</option>
+      </select>
+    </div>
+    <input class="btn btn-primary" type="submit" value="submit">
+  </form>
+
 {% endblock %}
