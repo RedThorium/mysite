@@ -27,6 +27,3 @@ def about():
 @app.route('/data')
 def data():
     return render_template('data.html', mydata = theData)
-
-if __name__ == '__main__':
-    app.run(debug=True)
