@@ -15,4 +15,4 @@ def nan():
 
 @app.route('/home')
 def rend_home():
-    return render_template('index.html')
+    return render_template('index.html, style.css')
