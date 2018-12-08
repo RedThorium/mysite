@@ -9,3 +9,6 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello from Meme World!, Dabbin on the haters'
 
+@app.route('/nana')
+def nan():
+    return 'I\'m a bonana'
