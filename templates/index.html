@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Mysite</title>
-    <link rel="stylesheet" type="text/css" href="./style.css">
-</head>
-<body>
-<p>
-  Anything
-</p>
-</body>
-</html>
+{% extends 'layout.html' %}
+
+{% block body %}
+  <div class="jumbotron text-center">
+    <h1>Welcome to MTAssistant</h1>
+    <p class="lead">This application helps you decide wheter to take the express or local train to get to yourr destination faster</p>
+  </div>
+{% endblock %}
