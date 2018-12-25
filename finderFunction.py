@@ -7,6 +7,7 @@ def most_common(L):
   SL = sorted((x, i) for i, x in enumerate(L))
 #  print 'SL:', SL
   groups = itertools.groupby(SL, key=operator.itemgetter(0))
+
   # auxiliary function to get "quality" for an item
   def _auxfun(g):
     item, iterable = g
@@ -20,9 +21,9 @@ def most_common(L):
   # pick the highest-count/earliest item
   return max(groups , key=_auxfun)[0]
 
-
-def finderFunction(TheData, boroughChoice):
+def finderFunction(boroughChoice):
 # print(MyData())
+  TheData = MyData()
 
   boroughNameList = []
 
@@ -30,6 +31,9 @@ def finderFunction(TheData, boroughChoice):
       if datas['borough'] == boroughChoice:
           boroughNameList.append(datas['animalname'])
 
+  #print(boroughNameList)
   return most_common(boroughNameList)
 
-print(finderFunction(MyData(),boroughChoice='brooklyn'))
+#print(finderFunction(boroughChoice='brooklyn'))
+#print(finderFunction(boroughChoice='Manhattan'))
+#print(finderFunction(boroughChoice='Brooklyn'))
